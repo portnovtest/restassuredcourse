@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.techietester'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '4.0.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.1'
+    // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    compile group: 'io.rest-assured', name: 'json-schema-validator', version: '4.0.0'
+    // https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis
+    compile group: 'com.github.scribejava', name: 'scribejava-apis', version: '2.5.3'
+
+
+
+}
